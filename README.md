@@ -1,9 +1,5 @@
 # AdoptaPet React
 
-## Datos del estudiante
-
-Nombre del estudiante: [Completar]
-
 ## Descripcion breve
 
 AdoptaPet es una aplicacion web SPA hecha con React. Muestra un directorio de mascotas en adopcion, permite filtrar por especie, buscar por nombre y destacar los casos de adopcion urgente.
