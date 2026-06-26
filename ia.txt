@@ -1,0 +1,15 @@
+Registro de uso de IA - AdoptaPet React
+
+Parte A
+Prompt: "Ayudame a hacer esto, etapa por etapa tal cual como dice el documento."
+Utilidad: Parcialmente util. Sirvio para ordenar el trabajo y detectar los elementos de React pedidos en la pauta.
+Cambios realizados: El analisis se adapto con redaccion propia y con ejemplos concretos de esta aplicacion.
+
+Etapa 1
+Prompt: "Ayudame a crear la base del proyecto con Vite React y a cargar el archivo local de mascotas."
+Utilidad: Util. Sirvio para crear la estructura inicial del proyecto y dejar los datos precargados en la carpeta correcta.
+Cambios realizados: Se ajusto la estructura para que coincida exactamente con la pauta y se verifico manualmente la carga del arreglo.
+
+Referencias
+OpenAI. (2026). ChatGPT/Codex [Modelo de lenguaje]. https://openai.com/
+React. (2026). React documentation. https://react.dev/

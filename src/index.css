@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #25323d;
+  background:
+    radial-gradient(circle at top, rgba(255, 211, 160, 0.35), transparent 28%),
+    linear-gradient(180deg, #fff9f3 0%, #f8efe4 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-surface: #fffaf5;
+  --color-surface-strong: #ffffff;
+  --color-border: #dfcdb9;
+  --color-text: #25323d;
+  --color-muted: #5c6a75;
+  --color-accent: #b65d2f;
+  --color-accent-strong: #8f421b;
+  --shadow-soft: 0 20px 45px rgba(73, 53, 32, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--color-text);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #1d2a33;
+}
