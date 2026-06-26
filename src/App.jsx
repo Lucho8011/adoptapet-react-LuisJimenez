@@ -1,18 +1,19 @@
 import { mascotas } from './data/mascotas'
+import ListaMascotas from './components/ListaMascotas'
 import './App.css'
 
 function App() {
-  console.log('Mascotas cargadas:', mascotas)
-
   return (
     <main className="app-shell">
       <header className="hero">
         <p className="hero__eyebrow">AdoptaPet</p>
         <h1>Directorio de mascotas en adopcion</h1>
         <p className="hero__text">
-          Los datos fueron cargados correctamente desde el archivo local.
+          Conoce a las mascotas disponibles y encuentra compania para tu hogar.
         </p>
       </header>
+
+      <ListaMascotas mascotas={mascotas} />
     </main>
   )
 }
