@@ -30,6 +30,16 @@ Prompt: "Ayudame a destacar las adopciones urgentes y a mostrar un contador en l
 Utilidad: Util. Me ayudo a cerrar la app con lo que faltaba de la pauta.
 Cambios realizados: Deje el resaltado visual con una etiqueta y un borde distinto, ademas del contador general.
 
+Mejora final 1
+Prompt: "Cambia la parte que dice anios por años y haz que las card de los animales sea responsiva, sin dañar y bien hecho."
+Utilidad: Util. Sirvio para mejorar la presentacion final de la app y dejar el texto mas natural.
+Cambios realizados: Cambie el texto a "años" y ajuste el diseno de las cards para que funcionen mejor en pantallas pequenas y grandes.
+
+Mejora final 2
+Prompt: "Haz documentacion del codigo, de forma concisa en partes precisas para que lo entienda cualquier programador."
+Utilidad: Util. Sirvio para dejar mas claro el flujo de la app sin llenar el proyecto de comentarios innecesarios.
+Cambios realizados: Agregue comentarios breves en las partes importantes, como el filtrado, la normalizacion de la busqueda y la responsabilidad de cada componente.
+
 Referencias
 OpenAI. (2026). ChatGPT/Codex [Modelo de lenguaje]. https://openai.com/
 React. (2026). React documentation. https://react.dev/

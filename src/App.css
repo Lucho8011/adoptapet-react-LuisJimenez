@@ -100,6 +100,7 @@
   gap: 20px;
   max-width: 1120px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .empty-state {
@@ -115,12 +116,16 @@
 }
 
 .mascota-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   border: 1px solid var(--color-border);
   border-radius: 22px;
   padding: 20px;
   background: var(--color-surface-strong);
   box-shadow: var(--shadow-soft);
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 .mascota-card--perro {
@@ -144,7 +149,9 @@
 
 .mascota-card__header {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 16px;
 }
@@ -173,6 +180,7 @@
 
 .mascota-card__title {
   margin-bottom: 8px;
+  line-height: 1.15;
 }
 
 .mascota-card__meta {
@@ -183,6 +191,7 @@
 
 .mascota-card__description {
   margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .mascota-card__tags {
@@ -198,4 +207,46 @@
   padding: 6px 12px;
   background: #f1f4f6;
   color: #385267;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    padding: 32px 16px 48px;
+  }
+
+  .hero,
+  .toolbar,
+  .mascota-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .mascotas-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .mascota-card__title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .toolbar,
+  .mascota-card {
+    padding: 16px;
+  }
+
+  .hero__counter,
+  .filtro-especie__button,
+  .mascota-card__badge,
+  .mascota-card__urgent,
+  .mascota-card__tag {
+    font-size: 0.78rem;
+  }
+
+  .mascota-card__title {
+    font-size: 1.65rem;
+  }
 }

@@ -14,11 +14,11 @@ const SPECIES_STYLES = {
 }
 
 /**
- * Muestra los datos principales de una mascota.
+ * Muestra una tarjeta con los datos visibles de una mascota.
  * Props esperadas:
  * - nombre: string con el nombre de la mascota.
  * - raza: string con la raza o tipo.
- * - edad: number con la edad en anios.
+ * - edad: number con la edad en años.
  * - especie: "Perro" | "Gato" | "Otro".
  * - descripcion: string con una descripcion breve.
  * - caracteristicas: array de strings con datos destacados.
@@ -33,6 +33,7 @@ function MascotaCard({
   adopcionUrgente = false,
 }) {
   const speciesStyle = SPECIES_STYLES[especie] ?? SPECIES_STYLES.Otro
+  // Si la adopcion es urgente, se agrega una clase extra para destacarla.
   const cardClassName = adopcionUrgente
     ? `${speciesStyle.className} mascota-card--urgent`
     : speciesStyle.className
@@ -48,11 +49,12 @@ function MascotaCard({
 
       <h2 className="mascota-card__title">{nombre}</h2>
       <p className="mascota-card__meta">
-        {raza} · {edad} anios
+        {raza} · {edad} años
       </p>
       <p className="mascota-card__description">{descripcion}</p>
 
       <ul className="mascota-card__tags" aria-label={`Caracteristicas de ${nombre}`}>
+        {/* Cada caracteristica se renderiza como etiqueta para mantener la lectura simple. */}
         {caracteristicas.map((caracteristica) => (
           <li key={`${nombre}-${caracteristica}`} className="mascota-card__tag">
             {caracteristica}
