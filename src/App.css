@@ -29,6 +29,16 @@
   margin: 0 auto;
 }
 
+.hero__counter {
+  display: inline-flex;
+  margin-top: 18px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #fff0e4;
+  color: var(--color-accent-strong);
+  font-weight: 700;
+}
+
 .toolbar {
   display: grid;
   gap: 18px;
@@ -123,6 +133,13 @@
 
 .mascota-card--otro {
   border-color: #72a88d;
+}
+
+.mascota-card--urgent {
+  border-width: 2px;
+  box-shadow:
+    0 0 0 3px rgba(188, 63, 56, 0.1),
+    var(--shadow-soft);
 }
 
 .mascota-card__header {

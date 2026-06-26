@@ -15,6 +15,7 @@ function App() {
   const [busqueda, setBusqueda] = useState('')
 
   const terminoNormalizado = normalizeSearchTerm(busqueda)
+  const urgentes = mascotas.filter((mascota) => mascota.adopcionUrgente).length
   const mascotasFiltradas = mascotas.filter((mascota) => {
     const coincideEspecie =
       filtroEspecie === 'Todas' || mascota.especie === filtroEspecie
@@ -35,6 +36,9 @@ function App() {
         <h1>Directorio de mascotas en adopcion</h1>
         <p className="hero__text">
           Conoce a las mascotas disponibles y encuentra compania para tu hogar.
+        </p>
+        <p className="hero__counter" aria-live="polite">
+          Hay {urgentes} mascotas con adopcion urgente.
         </p>
       </header>
 

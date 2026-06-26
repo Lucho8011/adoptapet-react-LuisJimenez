@@ -33,9 +33,12 @@ function MascotaCard({
   adopcionUrgente = false,
 }) {
   const speciesStyle = SPECIES_STYLES[especie] ?? SPECIES_STYLES.Otro
+  const cardClassName = adopcionUrgente
+    ? `${speciesStyle.className} mascota-card--urgent`
+    : speciesStyle.className
 
   return (
-    <article className={speciesStyle.className}>
+    <article className={cardClassName}>
       <div className="mascota-card__header">
         <span className="mascota-card__badge">{speciesStyle.label}</span>
         {adopcionUrgente ? (

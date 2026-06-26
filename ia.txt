@@ -10,6 +10,26 @@ Prompt: "Ayudame a crear la base del proyecto con Vite React y a cargar el archi
 Utilidad: Util. Sirvio para crear la estructura inicial del proyecto y dejar los datos precargados en la carpeta correcta.
 Cambios realizados: Se ajusto la estructura para que coincida exactamente con la pauta y se verifico manualmente la carga del arreglo.
 
+Etapa 2
+Prompt: "Ayudame a crear el componente MascotaCard con props, valores por defecto y un estilo distinto segun la especie."
+Utilidad: Util. Me sirvio para ordenar bien la tarjeta y no olvidar la validacion basica de datos.
+Cambios realizados: Cambie algunos textos y deje los valores por defecto mas simples para que no falle si falta algun dato.
+
+Etapa 3
+Prompt: "Ayudame a mostrar la lista de mascotas con map y usando el id como key."
+Utilidad: Util. Me sirvio para conectar la lista con la tarjeta de cada mascota.
+Cambios realizados: Revise que la key fuera el id y no el indice del arreglo.
+
+Etapa 4
+Prompt: "Ayudame a hacer un filtro por especie y una busqueda por nombre con useState, de forma segura."
+Utilidad: Util. Sirvio para dejar el buscador como componente controlado y para limitar la entrada del usuario.
+Cambios realizados: Ajuste la busqueda para recortar espacios, limitar el largo y mostrar un mensaje cuando no hay coincidencias.
+
+Etapa 5
+Prompt: "Ayudame a destacar las adopciones urgentes y a mostrar un contador en la parte superior."
+Utilidad: Util. Me ayudo a cerrar la app con lo que faltaba de la pauta.
+Cambios realizados: Deje el resaltado visual con una etiqueta y un borde distinto, ademas del contador general.
+
 Referencias
 OpenAI. (2026). ChatGPT/Codex [Modelo de lenguaje]. https://openai.com/
 React. (2026). React documentation. https://react.dev/
