@@ -28,3 +28,82 @@
   max-width: 56ch;
   margin: 0 auto;
 }
+
+.mascota-card {
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  padding: 20px;
+  background: var(--color-surface-strong);
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+
+.mascota-card--perro {
+  border-color: #d48e5e;
+}
+
+.mascota-card--gato {
+  border-color: #8f8ac9;
+}
+
+.mascota-card--otro {
+  border-color: #72a88d;
+}
+
+.mascota-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.mascota-card__badge,
+.mascota-card__urgent,
+.mascota-card__tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.mascota-card__badge {
+  padding: 6px 12px;
+  background: #f5ece2;
+  color: var(--color-accent-strong);
+}
+
+.mascota-card__urgent {
+  padding: 6px 12px;
+  background: #ffe0de;
+  color: #8a2f2b;
+}
+
+.mascota-card__title {
+  margin-bottom: 8px;
+}
+
+.mascota-card__meta {
+  margin-bottom: 14px;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.mascota-card__description {
+  margin-bottom: 16px;
+}
+
+.mascota-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mascota-card__tag {
+  padding: 6px 12px;
+  background: #f1f4f6;
+  color: #385267;
+}
